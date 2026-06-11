@@ -1,6 +1,6 @@
 <entity type="player">
   <transform x="250" y="465" />
   <velocity vx="0" vy="0" />
-  <sprite file="./Data/Sprites/Player.png" w="16" h="16" />
+  <sprite file="./data/Sprites/Player.png" w="16" h="16" />
   <collider w="14" h="16" />
 </entity>

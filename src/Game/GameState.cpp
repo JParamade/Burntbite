@@ -35,12 +35,12 @@ void GameState::Init() {
   LoadHighScore();
 
   // Initialize Enemy Sprite Paths.
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy1.png"); 
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy2.png"); 
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy3.png");
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy4.png");
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy5.png");
-  m_lEnemySpritePaths.push_back("./Data/Sprites/Enemy6.png");
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy1.png"); 
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy2.png"); 
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy3.png");
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy4.png");
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy5.png");
+  m_lEnemySpritePaths.push_back("./data/sprites/enemy6.png");
 }
 
 void GameState::CreatePlayerFromXML(const std::string& _rXmlPath) {
@@ -151,7 +151,7 @@ void GameState::ClearReset() {
 const std::string& GameState::GetRandomEnemySpritePath() const {
   // If there are no enemy sprite paths available, return a default path.
   if (m_lEnemySpritePaths.empty()) {
-    static const std::string sDefaultPath = "./Data/Sprites/Enemy1.png";
+    static const std::string sDefaultPath = "./data/sprites/enemy1.png";
     return sDefaultPath;
   }
 

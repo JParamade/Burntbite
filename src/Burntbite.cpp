@@ -17,11 +17,11 @@ int main() {
 
   // Create ECS and GameState.
 	ECS oEcs;
-	GameState oGameState(oEcs, "./Data/highscore.txt");
+	GameState oGameState(oEcs, "./data/highscore.txt");
 
   // Initialize GameState.
 	oGameState.Init();
-	oGameState.CreatePlayerFromXML("./Data/Entities/player.xml");
+	oGameState.CreatePlayerFromXML("./data/entities/player.xml");
 
   /// Initialize Systems.
 	auto oInputSystem = std::make_shared<InputSystem>(&oEngine, &oGameState);

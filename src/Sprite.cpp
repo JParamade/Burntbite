@@ -17,6 +17,8 @@ CSprite::~CSprite() {
 }
 
 void CSprite::Draw(Tigr* pWindow) {
+	if (!pTexture) return;
+
 	tigrBlitAlpha(pWindow, pTexture, m_iPosX, m_iPosY, 0, 0, pTexture->iWidth, pTexture->iHeight, 1);
 }
 

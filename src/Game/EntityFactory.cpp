@@ -56,7 +56,7 @@ Entity EntityFactory::CreatePlayerFromXML(ECS& _rEcs, const std::string& _rXmlPa
   // Sprite
   pugi::xml_node oSpriteNode = oNode.child("sprite");
   if (oSpriteNode) {
-    std::string sFilePath = oSpriteNode.attribute("file").as_string("./Data/Sprites/Character.png");
+    std::string sFilePath = oSpriteNode.attribute("file").as_string("./data/sprites/character.png");
     int iWidth = oSpriteNode.attribute("w").as_int(16);
     int iHeight = oSpriteNode.attribute("h").as_int(16);
     
@@ -65,7 +65,7 @@ Entity EntityFactory::CreatePlayerFromXML(ECS& _rEcs, const std::string& _rXmlPa
     _rEcs.AddComponent<SpriteComponent>(iEntity, oSprite);
   }
   else {
-    SpriteComponent oSprite("./Data/Sprites/Character.png", 16, 16);
+    SpriteComponent oSprite("./data/sprites/character.png", 16, 16);
     _rEcs.AddComponent<SpriteComponent>(iEntity, oSprite);
   }
 
