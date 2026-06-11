@@ -1,4 +1,4 @@
-## 🛠Key Features
+## Key Features
 
 * **Data-Oriented ECS Architecture:** A custom-built Entity Component System where Entities are just `uint32_t` IDs, Components are Plain Old Data (POD) structs, and Systems contain all gameplay logic.
 * **Type-Indexed Storage:** The core registry uses `std::type_index` mapped to an abstract `IStorage` interface, allowing the engine to store any component type in contiguous memory maps without hardcoding lists.
