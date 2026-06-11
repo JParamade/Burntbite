@@ -1,5 +1,3 @@
-// JAIME PÁRAMO BENÍTEZ
-
 #include "Engine.h"
 #include "Sprite.h"
 
